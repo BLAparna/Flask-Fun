@@ -29,11 +29,11 @@ jobs:
     # Step 4: Build Docker image
     - name: Build Docker Image
       run: |
-        docker build -t ghcr.io/${{ (github.repository_owner) }}/flask-app:latest .
+        docker build -t ghcr.io/${{ (github.repository_owner) }}/flask-fun/flask-app:latest .
 
     # Step 5: Push Docker image to GitHub Container Registry
     - name: Push Docker Image to GitHub Container Registry
       run: |
-        docker push ghcr.io/${{ (github.repository_owner) }}/flask-app:latest
+        docker push ghcr.io/${{ (github.repository_owner) }}/flask-fun/flask-app:latest
 
    
